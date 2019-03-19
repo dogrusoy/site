@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500);
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    outline: 0;
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.centered {
+    margin: 0 auto;
+}
+.tag {
+    font-weight: 500;
+    color: #BD1F1F;
+}
+.webgizle {
+    display: none;
+}
+input::-moz-focus-inner {
+    border: 0;
+}
+select:focus,
+select:focus {
+    outline: none;
+}
+h1 {
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+h2 {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.intro p {
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    margin: 10px;
+}
+.sosyalmedya img {
+    height: 64px;
+}
+.sosyalmedya a {
+    color: #fff;
+    padding: 0px 6px 0px 6px;
+}
+
+/* Daktilo effect started */
+
+.daktilo {
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    margin: 10px;
+}
+.typed-cursor {
+    color: white;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Centered texts in each section
+	* --------------------------------------- */
+
+.section {
+    text-align: center;
+}
+#section0 {
+    background: url('../img/dogrusoy_bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+#section1 {
+    background: url('../img/workbg.jpg') no-repeat center center;
+    background-size: cover;
+}
+.section2 {
+    background: url('../img/about_bg.png') no-repeat center center;
+    background-size: cover;
+}
+#section3 {
+    background: url('../img/contact_bg.jpg') no-repeat left center;
+    background-size: cover;
+}
+
+/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next {
+    right: 50px;
+}
+.profilpic {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.profilpic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* About Section */
+
+.letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 450px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+    display: block!important;
+    z-index: 999999;
+}
+.letter:before,
+.letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    display: block!important;
+    z-index: -999;
+}
+.letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+    display: inline!important;
+    z-index: -99;
+}
+.letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+    display: inline!important;
+    z-index: -9;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .letter {
+        margin: 6px auto 20px;
+        height: 93%;
+        font-size: 13px;
+    }
+    .twentytwenty-overlay,
+    .twentytwenty-handle {
+        display: none!important;
+    }
+    .twentytwenty-before {
+        display: none!important;
+    }
+    .daktilo {
+        font-size: 1.0em;
+    }
+    .mobilehidden {
+        display: none;
+    }
+    .nl-field-toggle,
+    .nl-form input,
+    .nl-form select {
+        width: 220px;
+    }
+    .webgizle {
+        display: block;
+    }
+}
+
+/*Scroll button*/
+
+.span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 0 0 3px 4px;
+}
+.unu {
+    margin-top: 6px;
+}
+.unu,
+.doi,
+.trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+.unu {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+}
+.doi {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+}
+.trei {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+}
+.mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    transform: none;
+    border: 2px solid white;
+    margin: 50px auto;
+    bottom: 10px;
+}
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 11px auto;
+    background: white;
+    position: relative;
+}
+.wheel {
+    -webkit-animation: mouse-wheel 1.2s ease infinite;
+    -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+@-webkit-keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+@-moz-keyframes mouse-wheel {
+    0% {
+        top: 1px;
+    }
+    50% {
+        top: 2px;
+    }
+    100% {
+        top: 3px;
+    }
+}
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
