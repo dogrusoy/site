@@ -93,8 +93,7 @@
                             <img src="./img/dogrusoy.png" alt="..." class="rounded mx-auto d-block mh-250">
                         </div>
                         <div class="col-xl-12 col-lg-8 col-md-10">
-                            <div class="text-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600"><br>
-                                Merhaba! Ben Ugur Dogrusoy <br>İstanbul’da yaşıyorum, Mersin üniversitesi Bilgisayar Teknolojileri ve Programlama Mezunuyum. Çalışma uzmanlığım UI/UX Designer ve aynı zamanda Web Front-End Developer’ım. <br>9 Yıldır bu işi yapıyorum <br>Genellikle Dribble, Behance, DesignerNews, Smashing Magazine, Codrops, Speckyboy ve Medium gibi yabancı kaynaklı web sitelerinde, tasarım alanındaki güncel gelişmeleri sürekli takip ediyorum. Agile, Scrum vb. proje yönetim methodları hakkında tecrübe sahibiyim.<br><br> Misyon olarak, user exprience kurallarına göre use case'ler oluşturup güncel bir tasarım öğesi ortaya çıkarmayı ve tasarım mimarisinin tüm detaylarını; tasarım trendleri, renk, tipografi ve kullanıcı deneyimleri ile harmanlayarak etkili bir ürün çıkarmayı hedefliyorum. <br>Web tabanlı projelerde, web front-end'in yanı sıra javascript de kullanarak, geliştirilebilir mimariye sahip, responsive ve mobil tasarımlar geliştiriyorum.
+                            <div class="text-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600"><br> Merhaba! Ben Ugur Dogrusoy <br>İstanbul’da yaşıyorum, Mersin üniversitesi Bilgisayar Teknolojileri ve Programlama Mezunuyum. Çalışma uzmanlığım UI/UX Designer ve aynı zamanda Web Front-End Developer’ım. <br>9 Yıldır bu işi yapıyorum <br>Genellikle Dribble, Behance, DesignerNews, Smashing Magazine, Codrops, Speckyboy ve Medium gibi yabancı kaynaklı web sitelerinde, tasarım alanındaki güncel gelişmeleri sürekli takip ediyorum. Agile, Scrum vb. proje yönetim methodları hakkında tecrübe sahibiyim.<br><br> Misyon olarak, user exprience kurallarına göre use case'ler oluşturup güncel bir tasarım öğesi ortaya çıkarmayı ve tasarım mimarisinin tüm detaylarını; tasarım trendleri, renk, tipografi ve kullanıcı deneyimleri ile harmanlayarak etkili bir ürün çıkarmayı hedefliyorum. <br>Web tabanlı projelerde, web front-end'in yanı sıra javascript de kullanarak, geliştirilebilir mimariye sahip, responsive ve mobil tasarımlar geliştiriyorum.
                             </div>
                         </div>
 
@@ -115,7 +114,7 @@
                     Bilgileri Doldur
                 </h2>
                 <div class="modal-body">
-                    <form action="" method="post">
+                    <form id="my-form" name="my-form" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-lg-5 col-md-6 col-sm-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
                                 <input type="email" name="email" placeholder="Numaranız" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
@@ -127,12 +126,13 @@
                             </div>
 
                         </div>
+                        <div class="modal-footer">
+                            <button class="mb-30 btn sm w-full action-2">Gönder</button>
+                            <button type="submit" class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Vazgeç</button>
+                        </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button class="mb-30 btn sm w-full action-2">Gönder</button>
-                    <button type="button" class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Vazgeç</button>
-                </div>
+
             </div>
         </div>
     </div>
@@ -303,15 +303,30 @@
         });
 
     </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24134663-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        $("#my-form").submit(function(e) {
+            e.preventDefault();
 
-  gtag('config', 'UA-24134663-3');
-</script>
+            var $form = $(this);
+            $.post($form.attr("action"), $form.serialize()).then(function() {
+                alert("Thank you!");
+            });
+        });
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24134663-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-24134663-3');
+
+    </script>
 
 
 </body>
