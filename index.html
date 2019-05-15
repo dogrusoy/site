@@ -117,12 +117,12 @@
                     <form id="banaulas" name="yeni-form" method="POST" data-netlify="true">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-lg-5 col-md-6 col-sm-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                <input type="text" name="telefon" placeholder="Telefon numaranız" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
+                                <input type="text" name="email" placeholder="Telefon numaranız" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
 
                             </div>
                             <div class="col-xl-12 col-lg-8 col-md-10">
                                 <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                    <textarea name="mesaj" placeholder="Mesajınız" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
+                                    <textarea name="message" placeholder="Mesajınız" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
 
                                 </div>
                             </div>
@@ -351,7 +351,7 @@
 
     </script>
     <script>
-        $("#yeni-form").submit(function(e) {
+        $("#banaulas").submit(function(e) {
             e.preventDefault();
 
             var $form = $(this);
