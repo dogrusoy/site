@@ -113,34 +113,26 @@
                 <h2 class="col-xl-12 mt-20 mb-20 small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
                     Bilgileri Doldur
                 </h2>
-                <form name="contact" method="POST" data-netlify="true">
-                   
-                    <p>
-                        <label>Email: <input type="text" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                         <button type="submit" class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Vazgeç</button>
-                    </p>
-                </form>
                 <div class="modal-body">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-12 col-lg-5 col-md-6 col-sm-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                            <input type="text" name="phone" placeholder="Numaranız" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
-                        </div>
-                        <div class="col-xl-12 col-lg-8 col-md-10">
-                            <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                <textarea name="area" placeholder="Mesajınız" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
-                            </div>
-                        </div>
+                    <form id="banaulas" name="banaulas" method="POST" data-netlify="true">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12 col-lg-5 col-md-6 col-sm-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                                <input type="text" name="telefon" placeholder="Numaranız" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
 
-                    </div>
-                    <div class="modal-footer">
-                        <button class="mb-30 btn sm w-full action-2">Gönder</button>
-                        <button type="submit" class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Vazgeç</button>
-                    </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-8 col-md-10">
+                                <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                                    <textarea name="mesaj" placeholder="Mesajınız" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="mb-30 btn sm w-full action-2">Gönder</button>
+                            <button class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Vazgeç</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -359,7 +351,7 @@
 
     </script>
     <script>
-        $("#my-form").submit(function(e) {
+        $("#banaulas").submit(function(e) {
             e.preventDefault();
 
             var $form = $(this);
