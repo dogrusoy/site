@@ -654,7 +654,7 @@ strong {
 /* 13. Showcases */
 
 .showcase_1 .block a:hover {
-    opacity: 0.8;
+    opacity: 1.0;
 }
 
 @media (max-width: 991.98px) {
@@ -664,7 +664,7 @@ strong {
 }
 
 .showcase_2 a:hover {
-    opacity: 0.8;
+    opacity: 1.0;
 }
 
 /* 14. Footers */

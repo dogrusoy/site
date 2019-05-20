@@ -911,6 +911,17 @@ input[type=radio] + label:before {
     position: absolute;
 }
 
+.newshadow {
+    filter: grayscale(.5);
+}
+
+.newshadow:hover {
+    transform: scale(1.02);
+    filter: grayscale(0);
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow 300ms;
+}
+
 /* Video block */
 
 .video {
