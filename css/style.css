@@ -692,7 +692,7 @@ strong {
 }
 
 .product-bg:hover {
-    border: 2px solid #482be7;
+    border: 2px solid transparent;
     outline: none;
 }
 
@@ -723,7 +723,7 @@ strong {
 .product-bg:hover .urun-size {
     -webkit-transform: translate(55px, -2px);
     transform: translate(2px, -12px);
-    box-shadow: 6px 10px 20px rgba(0, 0, 0, .26);
+    box-shadow: rgba(0,0,0,0.4) 0 16px 96px;
 }
 
 
