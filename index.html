@@ -17,39 +17,7 @@
     <link href="./css/framework.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <script src="./js/script.js"></script>
-    <script>
-        var language;
 
-        function getLanguage() {
-            (localStorage.getItem('language') == null) ? setLanguage('en'): false;
-            $.ajax({
-                url: 'language/' + localStorage.getItem('language') + '.json',
-                dataType: 'json',
-                async: false,
-                dataType: 'json',
-                success: function(lang) {
-                    language = lang
-                }
-            });
-        }
-
-        function setLanguage(lang) {
-            localStorage.setItem('language', lang);
-            getLanguage();
-            changeValues();
-        }
-
-    </script>
-    <script>
-        $(document).ready(function() {
-            setLanguage('tr');
-        });
-        
-        function changeValues() {
-            $('#merhaba','#anasayfa');
-        }
-
-   </script>
 </head>
 
 <body data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="0" >
@@ -87,10 +55,7 @@
                 <div class="row justify-content-center align-items-center f-18 medium">
                     <div class="col-lg-3 logo">Dogrusoy</div>
 
-                    <div>
-                        <a href="#" onclick="setLanguage('en')">English</a>
-                        <a href="#" onclick="setLanguage('tr')">Turkce</a>
-                    </div>
+                  
 
                     <div class="col-lg-6 text-center">
                         <a href="https://www.ugurdogrusoy.com/" class="link color-heading mx-15" id="anasayfa">Ana sayfa</a>
