@@ -28,7 +28,6 @@
                 async: false,
                 dataType: 'json',
                 success: function(lang) {
-                    console.log(lang);
                     language = lang
                 }
             });
@@ -47,7 +46,7 @@
         });
         
         function changeValues() {
-            $('#merhaba','#anasayfa').text('language');
+            $('#merhaba','#anasayfa');
         }
 
    </script>
