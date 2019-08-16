@@ -36,6 +36,7 @@
 
         function setLanguage(lang) {
             localStorage.setItem('language', lang);
+            getLanguage();
             changeValues();
         }
 
@@ -43,8 +44,6 @@
     <script>
         $(document).ready(function() {
             setLanguage('tr');
-            getLanguage();
-            changeValues();
         });
         
         function changeValues() {
