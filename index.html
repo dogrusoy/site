@@ -17,38 +17,6 @@
     <link href="./css/framework.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <script src="./js/script.js"></script>
-    <script>
-        var language;
-
-        function getLanguage() {
-            (localStorage.getItem('language') == null) ? setLanguage('en'): false;
-            $.ajax({
-                url: 'language/' + localStorage.getItem('language') + '.json',
-                dataType: 'json',
-                async: false,
-                dataType: 'json',
-                success: function(lang) {
-                    console.log(lang);
-                    language = lang
-                }
-            });
-        }
-
-        function setLanguage(lang) {
-            localStorage.setItem('language', lang);
-        }
-
-    </script>
-    <script>
-        $(document).ready(function() {
-            setLanguage('tr');
-            getLanguage();
-            
-            console.log(language);
-            $('#div1').text(language.date);
-        });
-
-    </script>
 </head>
 
 <body data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="0" id="dilchange">
@@ -85,13 +53,6 @@
             <div class="container px-xl-0">
                 <div class="row justify-content-center align-items-center f-18 medium">
                     <div class="col-lg-3 logo">Dogrusoy</div>
-
-                    <div>
-                        <a href="#" onclick="setLanguage('en')">ingilizce</a>
-                        <a href="#" onclick="setLanguage('tr')">Turkce</a>
-                    </div>
-                    <div id="div1">test</div>
-
                     <div class="col-lg-6 text-center">
                         <a href="https://www.ugurdogrusoy.com/" class="link color-heading mx-15">Ana sayfa</a>
                         <a data-toggle="modal" data-target="#AboutusModal" href="#" class="link color-heading mx-15">Hakkımda</a>
