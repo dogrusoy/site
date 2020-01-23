@@ -169,43 +169,51 @@ strong {
 /* Smaller than 1200px */
 
 @media (max-width: 1199.98px) {
+
     header[class^="pt-"],
     section[class^="pt-"],
     header[class*=" pt-"],
     section[class*=" pt-"] {
         padding-top: 80px;
     }
+
     header[class^="pb-"],
     section[class^="pb-"],
     header[class*=" pb-"],
     section[class*=" pb-"] {
         padding-bottom: 80px;
     }
+
     h1 br,
     h2 br,
     h3 br,
     .text-adaptive br {
         display: none;
     }
+
     h1,
     h2 {
         font-size: 52px;
         line-height: 62px;
     }
+
     h1.big,
     h2.big {
         font-size: 62px;
         line-height: 72px;
     }
+
     h1.small,
     h2.small {
         font-size: 36px;
         line-height: 46px;
     }
+
     h3 {
         font-size: 36px;
         line-height: 46px;
     }
+
     .navigation_mobile {
         display: block;
     }
@@ -214,37 +222,45 @@ strong {
 /* Smaller than 992px */
 
 @media (max-width: 991.98px) {
+
     h1,
     h2 {
         font-size: 42px;
         line-height: 52px;
     }
+
     h1.big,
     h2.big {
         font-size: 52px;
         line-height: 62px;
     }
+
     h1.small,
     h2.small {
         font-size: 32px;
         line-height: 42px;
     }
+
     h3 {
         font-size: 32px;
         line-height: 42px;
     }
+
     .text-adaptive.f-24 {
         font-size: 22px;
         line-height: 32px;
     }
+
     .text-adaptive.f-22 {
         font-size: 20px;
         line-height: 30px;
     }
+
     .text-adaptive.f-20 {
         font-size: 18px;
         line-height: 28px;
     }
+
     .alert {
         top: 10px;
         left: 20px;
@@ -258,41 +274,50 @@ strong {
 /* Smaller than 768px */
 
 @media (max-width: 767.98px) {
+
     h1,
     h2 {
         font-size: 32px;
         line-height: 42px;
     }
+
     h1.big,
     h2.big {
         font-size: 42px;
         line-height: 52px;
     }
+
     h1.small,
     h2.small {
         font-size: 26px;
         line-height: 36px;
     }
+
     h3 {
         font-size: 26px;
         line-height: 36px;
     }
+
     .text-adaptive.f-24 {
         font-size: 20px;
         line-height: 30px;
     }
+
     .text-adaptive.f-22 {
         font-size: 18px;
         line-height: 28px;
     }
+
     .text-adaptive.f-20 {
         font-size: 16px;
         line-height: 26px;
     }
+
     .text-adaptive.f-18 {
         font-size: 16px;
         line-height: 26px;
     }
+
     .btn.lg {
         height: 50px;
         line-height: 50px;
@@ -300,10 +325,12 @@ strong {
         font-size: 18px;
         font-weight: 500;
     }
+
     .btn.lg[class^="border-"],
     .btn.lg[class*=" border-"] {
         line-height: 46px;
     }
+
     .btn.xl {
         height: 60px;
         line-height: 60px;
@@ -311,10 +338,12 @@ strong {
         font-size: 18px;
         font-weight: 500;
     }
+
     .btn.xl[class^="border-"],
     .btn.xl[class*=" border-"] {
         line-height: 56px;
     }
+
     .input.lg {
         height: 50px;
         font-size: 18px;
@@ -334,26 +363,31 @@ strong {
 /* Smaller than 576px */
 
 @media (max-width: 575.98px) {
+
     h1,
     h2 {
         font-size: 26px;
         line-height: 36px;
     }
+
     h1.big,
     h2.big {
         font-size: 32px;
         line-height: 42px;
     }
+
     h1.small,
     h2.small {
         font-size: 22px;
         line-height: 32px;
     }
+
     .btn.xl {
         height: 50px;
         line-height: 50px;
         padding: 0 30px;
     }
+
     .btn.xl[class^="border-"],
     .btn.xl[class*=" border-"] {
         line-height: 46px;
@@ -366,6 +400,7 @@ strong {
     .header_1 .text-adaptive {
         margin-top: 20px;
     }
+
     .header_1 .buttons {
         margin-top: 40px;
     }
@@ -375,13 +410,16 @@ strong {
     .header_2 .text-adaptive {
         margin-top: 20px;
     }
+
     .header_2 form {
         margin-top: 40px;
     }
+
     .header_2 form .input {
         text-align: center;
         width: 100%;
     }
+
     .header_2 form .btn {
         margin-left: 0;
         margin-top: 15px;
@@ -394,6 +432,7 @@ strong {
     .navigation_2 a {
         margin: 0 15px;
     }
+
     .navigation_2 .dropdown a {
         margin: 0;
     }
@@ -425,6 +464,7 @@ strong {
 /* 7. Features */
 
 @media (max-width: 1199.98px) {
+
     .feature_1[class^="pb-"],
     .feature_1[class*=" pb-"] {
         padding-bottom: 30px;
@@ -436,16 +476,19 @@ strong {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .feature_1 .title br {
         display: none;
     }
 }
 
 @media (max-width: 1199.98px) {
+
     .feature_2[class^="pb-"],
     .feature_2[class*=" pb-"] {
         padding-bottom: 30px;
     }
+
     .feature_2 .description {
         margin-top: 20px;
     }
@@ -469,6 +512,7 @@ strong {
     .form_1 h2 {
         margin-bottom: 20px;
     }
+
     .form_1 form {
         padding: 30px;
     }
@@ -493,9 +537,11 @@ strong {
     .form_2 form {
         padding: 80px 0;
     }
+
     .form_2 .buttons {
         margin-top: 10px;
     }
+
     .form_2 button {
         margin-right: 0px;
         width: 100%;
@@ -515,6 +561,7 @@ strong {
     .call_to_action_1 .description {
         margin: 10px 0 30px 0;
     }
+
     .call_to_action_1 .btn {
         margin-bottom: 15px;
     }
@@ -597,15 +644,18 @@ strong {
 }
 
 @media (max-width: 991.98px) {
+
     .pricing_table_1[class^="pb-"],
     .pricing_table_1[class*=" pb-"] {
         padding-bottom: 30px;
     }
+
     .pricing_table_1 .block {
         margin: 0 auto 50px auto;
         max-width: 300px;
         border-radius: 10px;
     }
+
     .pricing_table_1 .block.noborder_right {
         border-right: 2px solid #ebeaed;
     }
@@ -723,7 +773,7 @@ strong {
 .product-bg:hover .urun-size {
     -webkit-transform: translate(55px, -2px);
     transform: translate(2px, -12px);
-    box-shadow: rgba(0,0,0,0.4) 0 16px 96px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 16px 96px;
 }
 
 
@@ -759,22 +809,27 @@ strong {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     2% {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     6% {
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg)
     }
+
     10% {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     14% {
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg)
     }
+
     16% {
         -webkit-transform: rotate(0);
         transform: rotate(0)
@@ -786,24 +841,36 @@ strong {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     2% {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     6% {
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg)
     }
+
     10% {
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg)
     }
+
     14% {
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg)
     }
+
     16% {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+}
+
+
+
+
+.color-resume {
+    color: #212529;
 }
