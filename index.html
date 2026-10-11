@@ -145,23 +145,28 @@ In web-based projects, I develop responsive and mobile designs with a maintainab
                     Fill in Information
                 </h2>
                 <div class="modal-body">
-                    <form id="banaulas" name="yeni-form" method="POST" data-netlify="true">
+                    <form id="banaulas" name="yeni-form" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+                        <input type="hidden" name="form-name" value="yeni-form">
+                        <p hidden><label>Leave this field empty: <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-lg-5 col-md-6 col-sm-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                <input type="text" name="number" placeholder="Phone Number" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
+                                <label for="contact-number">Phone Number</label>
+                                <input id="contact-number" type="tel" name="number" autocomplete="tel" maxlength="40" placeholder="Phone Number" class="mb-30 input w-full border-gray focus-action-1 color-heading placeholder-heading text-left" required="">
 
                             </div>
                             <div class="col-xl-12 col-lg-8 col-md-10">
                                 <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
-                                    <textarea name="message" placeholder="Message" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
+                                    <label for="contact-message">Message</label>
+                                    <textarea id="contact-message" name="message" maxlength="5000" placeholder="Message" class="mb-20 input w-full h-160 border-gray focus-action-1 color-heading placeholder-heading text-left" required=""></textarea>
 
                                 </div>
                             </div>
 
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="modal-footer">
                             <button type="submit" class="mb-30 btn sm w-full action-2">Send</button>
-                            <button class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Close</button>
+                            <button type="button" class="mb-30 btn sm w-full action-2 close" data-dismiss="modal" aria-label="Close">Close</button>
                         </div>
                     </form>
                 </div>
@@ -500,17 +505,7 @@ In web-based projects, I develop responsive and mobile designs with a maintainab
         });
 
     </script>
-    <script>
-        $("#banaulas").submit(function(e) {
-            e.preventDefault();
-
-            var $form = $(this);
-            $.post($form.attr("action"), $form.serialize()).then(function() {
-                alert("Thank you, I will get back to you shortly!");
-            });
-        });
-
-    </script>
+    <script src="./js/contact-form.js" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24134663-3"></script>
     <script>
