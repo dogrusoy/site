@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 	// AJAX send form
 		
-	$("form").submit(function(event){
+	$("form").not("#banaulas").submit(function(event){
 		event.preventDefault();
 	 
 		var form = $(this),
